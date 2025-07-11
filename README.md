@@ -1,16 +1,18 @@
 # DB-Sharding
-Playing around with local db sharding setup.
+Creating the most overly-engineered test project. Why - for fun :)
 
 ## Plan
 
-- Frontend for visualizing Prometheus data on DB writes + reads (latency, count), as well as scaling the QPS.
+- Grafana for visualizing Prometheus data on DB writes + reads (latency, count), as well as scaling the QPS.
 - Backend for making DB queries at high volume to simulate contention.
 - Multiple Postgres servers running to act as shards.
 - Prometheus monitoring.
+- Fully automate CI/CD pipeline for deploying
+- Use Terraform for managing AWS compute - EC2 instances.
 
-### Optional
+### Later
 
-- After running locally, add CI/CD + deploy externally
 - DB replication
 - Backups
-- Etc.
+- Read/Write Replicas
+- Load balancing
