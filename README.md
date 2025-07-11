@@ -16,3 +16,4 @@ Creating the most overly-engineered test project. Why - for fun :)
 - Backups
 - Read/Write Replicas
 - Load balancing
+- React frontend
