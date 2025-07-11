@@ -1,0 +1,10 @@
+services:
+  backend:
+    image: "db-sharding-backend:${VERSION}"
+    ports:
+      - "8080:8080"
+  # shard1:
+
+  # shard2:
+
+  # shard3:
