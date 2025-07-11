@@ -3,8 +3,21 @@ services:
     image: "db-sharding-backend:${VERSION}"
     ports:
       - "80:80"
-  # shard1:
-
-  # shard2:
-
-  # shard3:
+  shard0:
+    image: "postgres:17"
+    ports:
+      - "3000:5432"
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+  shard1:
+    image: "postgres:17"
+    ports:
+      - "3001:5432"
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+  shard2:
+    image: "postgres:17"
+    ports:
+      - "3002:5432"
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
