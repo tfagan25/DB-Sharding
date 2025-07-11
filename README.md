@@ -17,3 +17,11 @@ Creating the most overly-engineered test project. Why - for fun :)
 - Read/Write Replicas
 - Load balancing
 - React frontend
+
+## Idea
+
+Make interactive UI to be able to handle different aspects of database performance with visualizations for
+multiple different database configurations - AKA load testing visualization for databases. Compare visually just a
+database, a vertically scaled database, a database with sharding, a database with Read/Write replicas, 
+add Redis caching layer inbetween DB, geo sharding. Have toggles for reads/writes per second, introduce DB 
+inserts at scale to introduce hotspots for sharding.
